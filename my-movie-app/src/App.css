@@ -1,0 +1,80 @@
+/* 推荐区样式 */
+.recommend-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.recommend-row .movie-item {
+  width: 200px;
+  margin: 0 10px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: box-shadow 0.2s;
+}
+.recommend-row .movie-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.app-container {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: left;
+}
+
+.movie-item h3 {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* 模态框样式 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
