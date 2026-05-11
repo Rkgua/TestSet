@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>课程表</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-header">课程表</div>
+
+      <div class="remove-zone-indicator" id="removeZone">
+        拖放到此处移除课程
+      </div>
+
+      <div class="main-container">
+        <div class="left-panel" id="leftPanel" data-zone="course-list">
+          <div class="panel-title">
+            <span class="panel-text">课程列表</span>
+            <button class="toggle-btn" id="toggleBtn">◀</button>
+          </div>
+          <div class="course-list" id="courseList"></div>
+
+          <div class="add-course">
+            <input id="newCourseInput" placeholder="课程名" />
+            <button id="addBtn">+ 添加</button>
+          </div>
+        </div>
+        <div class="right-panel" id="rightPanel">
+          <div class="schedule-grid" id="scheduleGrid"></div>
+        </div>
+      </div>
+
+      <div class="drag-ghost" id="dragGhost"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
