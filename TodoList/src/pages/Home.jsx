@@ -24,8 +24,8 @@ const Home = ({ filter: routeFilter }) => {
           ? "All"
           : filter === "active"
             ? "Active"
-            : "Completed"} 
-        Todos
+            : "Completed"}
+        {" Todos"}
       </h2>
       <AddTodo onAdd={addTodo} />
       {todos.length === 0 ? (
@@ -44,7 +44,7 @@ const Home = ({ filter: routeFilter }) => {
       )}
       {allTodos.length > 0 && (
         <p style={{ marginTop: 16, color: "#666", fontSize: "0.9em" }}>
-          {allTodos.filter((t) => !t.completed).length} items left
+          {allTodos.filter((t) => !t.completed).length} 个任务未完成
         </p>
       )}
     </div>
