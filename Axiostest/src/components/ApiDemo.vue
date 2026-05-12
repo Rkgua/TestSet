@@ -82,7 +82,7 @@ const uploadStatus = ref("");
 // 获取单个用户 - 输入绑定
 const fetchId = ref(1);
 
-// 创建用户 - 输入绑定
+// 创建用户 - 默认为0 手动输入id
 const createUserId = ref(0);
 const createUsername = ref("");
 const createPassword = ref("");
@@ -97,7 +97,7 @@ const patchId = ref(1);
 const patchUsername = ref("");
 const patchPassword = ref("");
 
-// 删除用户 - 输入绑定
+// 删除用户 - 默认输入1
 const deleteId = ref(1);
 
 // 获取所有用户

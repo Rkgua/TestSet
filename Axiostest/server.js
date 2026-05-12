@@ -26,7 +26,7 @@ app.get("/user", (req, res) => {
   res.json(users);
 });
 
-//获取用户信息
+//获取单个用户信息
 app.get("/user/:id", (req, res) => {
   const user = users.find((u) => u.id == req.params.id);
 
